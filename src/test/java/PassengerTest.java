@@ -6,6 +6,7 @@ public class PassengerTest {
     @BeforeEach
     void setup()
     {
-        myPass = new Passenger();
+        myPass = new Passenger("Mr", "Bartek", "Drapinski");
     }
+
 }
