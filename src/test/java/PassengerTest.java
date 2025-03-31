@@ -22,10 +22,11 @@ public class PassengerTest {
     }
 
     @Test
-    void testTitle()
+    void testTitleFailure()
     {
         //Mr, Mrs or Ms
         assertThrows(IllegalArgumentException.class, () -> {new Passenger("Dr", "Bartek", "Drapinski");});
+        assertThrows(IllegalArgumentException.class, () -> {new Passenger("", "Bartek", "Drapinski");});
     }
 
 }
