@@ -32,6 +32,11 @@ public class PassengerTest {
     }
 
     @ParameterizedTest
+    @ValueSource(strings= {"Mr", "Mrs", "Ms"})
+    void testTitleSuccessv2(String title)
+    {
+        Passenger myPass4 = new Passenger(title, "Bartek", "Drapinski");
+    }
 
     @Test
     void testTitleFailure()
