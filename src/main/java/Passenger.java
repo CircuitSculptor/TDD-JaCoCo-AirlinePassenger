@@ -8,7 +8,7 @@ public class Passenger {
     {
         if(!title.equals("Mr") && !title.equals("Mrs") && !title.equals("Ms"))
         {
-            throw new IllegalStateException("Invalid passenger title");
+            throw new IllegalArgumentException("Invalid passenger title");
         }
         this.title = title;
         this.firstName = firstName;
