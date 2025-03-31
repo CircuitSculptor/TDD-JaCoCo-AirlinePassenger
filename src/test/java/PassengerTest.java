@@ -22,6 +22,16 @@ public class PassengerTest {
     }
 
     @Test
+    void testTitleSuccess()
+    {
+        assertEquals("Mr", myPass.getTitle());
+        Passenger myPass2 = new Passenger("Ms", "Bartek", "Drapinski");
+        assertEquals("Ms", myPass2.getTitle());
+        Passenger myPass3 = new Passenger("Mrs", "Bartek", "Drapinski");
+        assertEquals("Mrs", myPass3.getTitle());
+    }
+
+    @Test
     void testTitleFailure()
     {
         //Mr, Mrs or Ms
