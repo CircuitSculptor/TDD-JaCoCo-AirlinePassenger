@@ -31,6 +31,8 @@ public class PassengerTest {
         assertEquals("Mrs", myPass3.getTitle());
     }
 
+    @ParameterizedTest
+
     @Test
     void testTitleFailure()
     {
